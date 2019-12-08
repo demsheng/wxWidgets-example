@@ -1,0 +1,22 @@
+#ifndef _FORMAT_SINGLE_FILE
+
+The main Riffle window looks like this:<P>
+
+<center>
+<IMG SRC="screen01.jpg" ALT="Riffle Screenshot" VSPACE=""  BORDER="0"> <br clear=all>
+</center>
+#endif
+
+<P>
+
+Please click on a topic below to learn about
+the individual Riffle windows.<P>
+
+<UL>
+<LI> _HREF(doc-0012,Menubar)
+<LI> _HREF(doc-0013,Main toolbar)
+<LI> _HREF(doc-0015,Directory browser)
+<LI> _HREF(doc-0016,Thumbnail browser)
+<LI> _HREF(doc-0017,Image viewer)
+</UL>
+

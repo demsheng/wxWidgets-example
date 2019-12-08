@@ -1,0 +1,52 @@
+This topic describes the function of the menubar commands.<P>
+
+<CENTER>
+<A HREF="#filemenu">File</A> |
+<A HREF="#editmenu">Edit</A> |
+<A HREF="#viewmenu">View</A> |
+<A HREF="#helpmenu">Help</A>
+</CENTER><P>
+
+<H3><A NAME="filemenu">File menu</A></H3>
+
+<TABLE>
+
+MENUITEM(Exit (Alt+F4), Quits the application.)
+
+</TABLE>
+
+<P>
+
+<H3><A NAME="editmenu">Edit menu</A></H3>
+
+<TABLE>
+
+MENUITEM(Copy (Ctrl+C), Copies the viewed image to the clipboard.)
+
+</TABLE>
+
+<H3><A NAME="viewmenu">View menu</A></H3>
+
+<TABLE>
+MENUITEM(Show Thumbnails (Ctrl+T), Shows the thumbnails browser.)
+MENURULE
+MENUITEM(Zoom In (+), Increases the zoom level on the selected image.)
+MENUITEM(Zoom Out (-), Decreases the zoom level on the selected image.)
+MENUITEM(Actual Size (Ctrl+S), Shows the image at actual size.)
+MENUITEM(Fit Window (Ctrl+F), Fits the image to the size of the image browser window.)
+MENURULE
+MENUITEM(Settings... (Ctrl+P),Displays the Settings dialog\, which allows editing of
+a variety of preferences. See _HREF(doc-0044,Settings Dialog).)
+
+</TABLE>
+
+<H3><A NAME="helpmenu">Help menu</A></H3>
+
+<TABLE>
+MENUITEM(Help Contents, Shows the online help contents.)
+MENUITEM(What's This?, After selecting this command\, click on a Riffle window to view a short
+tip describing its function.)
+MENURULE
+MENUITEM(About, Shows an About box giving version and build information.)
+</TABLE>
+

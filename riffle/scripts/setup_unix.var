@@ -1,0 +1,155 @@
+### List of variables for the purposes of generating an application's
+### distribution.
+### This file is Linux-specific.
+
+#-------------------------------------------------------------------------
+# The application name
+#-------------------------------------------------------------------------
+
+APPNAME=riffle
+
+#-------------------------------------------------------------------------
+# The archive prefix
+#-------------------------------------------------------------------------
+
+ARCHIVENAME=Riffle
+
+#-------------------------------------------------------------------------
+# The application title
+#-------------------------------------------------------------------------
+
+APPTITLE="Riffle"
+
+#-------------------------------------------------------------------------
+# The default directory name
+#-------------------------------------------------------------------------
+
+DEFAULTDIR="Riffle"
+
+#-------------------------------------------------------------------------
+# The application author (copyright holder)
+#-------------------------------------------------------------------------
+
+AUTHOR="Anthemion Software Ltd"
+
+#-------------------------------------------------------------------------
+# The application vendor (organisation)
+#-------------------------------------------------------------------------
+
+VENDOR="Anthemion"
+
+#-------------------------------------------------------------------------
+# The application data file extension
+#-------------------------------------------------------------------------
+
+APPEXTENSION=jpg
+
+#-------------------------------------------------------------------------
+# The C++ symbol to use when querying for the version number
+#-------------------------------------------------------------------------
+
+VERSIONSYMBOL=VERSION_NUMBER
+
+#-------------------------------------------------------------------------
+# The top-level directory of the application source tree
+#-------------------------------------------------------------------------
+
+APPDIR=/home/julians/StartingBlocks/book/riffle
+
+#-------------------------------------------------------------------------
+# The source of wxWidgets locale files
+#-------------------------------------------------------------------------
+
+WXLOCALEDIR=/home/julians/wxWidgets-2.6.0
+
+#-------------------------------------------------------------------------
+# The destination directory of the setup
+#-------------------------------------------------------------------------
+
+DESTDIR=$APPDIR/deliver
+
+#-------------------------------------------------------------------------
+# The temporary image directory to use when preparing the setup
+#-------------------------------------------------------------------------
+
+SETUPIMAGEDIR=$APPDIR/deliver/image
+
+#-------------------------------------------------------------------------
+# The name of the file with $VERSIONSYMBOL in it
+#-------------------------------------------------------------------------
+
+VERSIONSYMBOLFILE=$APPDIR/src/symbols.h
+
+#-------------------------------------------------------------------------
+# The source directories
+#-------------------------------------------------------------------------
+
+SRCDIR=$APPDIR/src
+
+#-------------------------------------------------------------------------
+# The locations of the readme and license files
+#-------------------------------------------------------------------------
+
+READMEFILE=$APPDIR/docs/readme.txt
+READMEAFTERFILE=$APPDIR/docs/readme-after.txt
+LICENSEFILE=$APPDIR/docs/license.txt
+
+#-------------------------------------------------------------------------
+# The build directories
+#-------------------------------------------------------------------------
+
+BUILDDIR=$APPDIR/src/ReleaseGTK2
+APPBUILDDIR=$BUILDDIR
+
+#-------------------------------------------------------------------------
+# The binary to include in the setup
+#-------------------------------------------------------------------------
+
+APPBINARY=$APPBUILDDIR/riffle
+
+#-------------------------------------------------------------------------
+# Whether we will compress the binary (0 or 1).
+# Use --upx or --no-upx to override this default value.
+#-------------------------------------------------------------------------
+
+UPX=0
+
+#-------------------------------------------------------------------------
+# Whether we will make a manual (0 or 1)
+# Use --make-manual or --no-make-manual to override this default value.
+#-------------------------------------------------------------------------
+
+MAKEMANUAL=0
+
+#-------------------------------------------------------------------------
+# The manual filename(s)
+#-------------------------------------------------------------------------
+
+MANUALFILES=riffle.htb
+
+#-------------------------------------------------------------------------
+# The directory containing the manual source. We assume
+# that there is a Makefile in this directory for making the
+# manual.
+#-------------------------------------------------------------------------
+
+MANUALDIR=$APPDIR/manual
+
+#-------------------------------------------------------------------------
+# The resources file to compile, if any (e.g. myapp.bin).
+# This is just a zip containing files to be used by the
+# application, usually stored in src/resources.
+#
+# If this is left empty, no resources will be compiled.
+#-------------------------------------------------------------------------
+
+# RESOURCESFILE=riffle.bin
+
+#-------------------------------------------------------------------------
+# The directory containing the resources.
+#
+# If this is left empty, no resources will be compiled.
+#-------------------------------------------------------------------------
+
+# RESOURCESDIR=$APPDIR/Resources
+

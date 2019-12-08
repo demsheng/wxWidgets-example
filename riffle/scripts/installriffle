@@ -1,0 +1,380 @@
+#!/bin/sh
+
+###############################################################
+# installriffle -- Riffle installation script.                #
+# Julian Smart, January 2005                                  #
+# Usage: installriffle [optional target directory]            #
+###############################################################
+
+########### Edit these variables for your system. #############
+
+# Editor
+MYEDITOR=$EDITOR
+if [ "$MYEDITOR" = "" ]
+then
+  MYEDITOR=emacs
+fi
+
+# Pager
+MYPAGER=$PAGER
+if [ "$MYPAGER" = "" ]
+then
+  MYPAGER=more
+fi
+
+# Riffle directory to install to.
+RIFFLEDIR=~/Riffle-__RIFFLEVERSION__
+if [ ! "$1" = "" ]
+then
+  RIFFLEDIR="$1"
+fi
+
+# Directory to put the launch script
+APPBINDIR="$RIFFLEDIR"
+
+# Archive prefix
+ARCHIVE=RiffleData
+
+# Current directory
+CURRENTDIR=`pwd`
+
+install_from_gzip()
+{
+  if [ ! -d "$RIFFLEDIR" ]
+  then
+    mkdir -p "$RIFFLEDIR"
+  fi
+
+  if [ ! -d "$RIFFLEDIR" ]
+  then
+    echo "*** Sorry, the directory $RIFFLEDIR could not be created."
+  else
+    cd "$RIFFLEDIR"
+    if [ -f $CURRENTDIR/$ARCHIVE".tar.gz" ]
+    then
+      echo Unarchiving $CURRENTDIR/$ARCHIVE".tar.gz"
+      tar xfz $CURRENTDIR/$ARCHIVE".tar.gz"
+    else
+      echo $CURRENTDIR/$ARCHIVE".tar.gz" not found. Please place in the current directory.
+    fi
+    cd $CURRENTDIR
+  fi
+}
+
+# Select a target
+select_dir()
+{
+  dirok="n"
+  while [ "$dirok" != "y" ]
+  do
+    echo "Select the directory to install Riffle into"
+    echo "--------------------------------------------------------------"
+    echo ""
+    echo "This is where the binaries and data will be copied to."
+    echo "They can go anywhere you want, but make sure you have the"
+    echo "appropriate permissions if copying outside your home area."
+    echo ""
+    echo "Current value: " $RIFFLEDIR
+    echo ""
+    echo "New directory: (return for existing value):"
+    read inp
+    if [ "$inp" != "" ]
+    then
+      RIFFLEDIR=`echo $inp | sed "s|~|\${HOME}|"`
+    fi
+
+    dirok="y"
+
+    if [ -d "$RIFFLEDIR" ]
+    then
+      echo "This directory already exists. Do you wish to choose another? (y/n)"
+      read inp
+      if [ "$inp" = "y" ]
+      then
+        dirok="n"
+      fi
+    fi
+    APPBINDIR="$RIFFLEDIR"
+
+    # If we're not going around the loop again, try creating this directory.
+    if [ "$dirok" = "y" ]
+    then
+        canremove="n"
+        if [ ! -d "$RIFFLEDIR" ]
+        then
+          canremove="y"
+        fi
+
+        mkdir -p "$RIFFLEDIR"
+        if [ ! -d "$RIFFLEDIR" ]
+        then
+          dirok="n"
+          echo ""
+          echo "*** Sorry, this directory could not be created. You may need to"
+          echo "quit this script, log on as root, and run the script again."
+          echo "Alternatively, try choosing a directory in your home area."
+          echo ""
+          echo "Quit the script now? (y/n)"
+          read inp
+          if [ "$inp" = "y" ]
+          then
+            echo "Goodbye, come back soon!"
+            exit
+          fi
+        else
+          # Now we kow we can create it, clean it up
+          if [ "$canremove" = "y" ]
+          then
+            rmdir "$RIFFLEDIR"
+          fi
+        fi
+    fi
+  done
+}
+
+# Select a dir for the scripts to be placed
+select_script_dir()
+{
+  dirok="n"
+  while [ "$dirok" != "y" ]
+  do
+    echo "Select the directory to install the launch script into."
+    echo "--------------------------------------------------------------"
+    echo ""
+    echo "We will create a script called riffle which"
+    echo "invoke this application. You may wish to place these in your"
+    echo "local bin directory, or they can be placed in the Riffle"
+    echo "install directory (the default location)."
+    echo ""
+    echo "Current value: " $APPBINDIR
+    echo ""
+    echo "New directory: (return for existing value):"
+    read inp
+    if [ "$inp" != "" ]
+    then
+      APPBINDIR=`echo $inp | sed "s|~|\${HOME}|"`
+    fi
+
+    dirok="y"
+
+    # If we're not going around the loop again, try creating this directory.
+    if [ "$dirok" = "y" ]
+    then
+        canremove="n"
+        if [ ! -d "$APPBINDIR" ]
+        then
+          canremove="y"
+        fi
+
+        mkdir -p "$APPBINDIR"
+        if [ ! -d "$APPBINDIR" ]
+        then
+          dirok="n"
+          echo ""
+          echo "*** Sorry, this directory could not be created. You may need to"
+          echo "quit this script, log on as root, and run the script again."
+          echo "Alternatively, try choosing a directory in your home area."
+          echo ""
+          echo "Quit the script now? (y/n)"
+          read inp
+          if [ "$inp" = "y" ]
+          then
+            echo "Goodbye, come back soon!"
+            exit
+          fi
+        else
+          # Now we kow we can create it, clean it up
+          if [ "$canremove" = "y" ]
+          then
+            rmdir "$APPBINDIR"
+          fi
+        fi
+    fi
+  done
+}
+
+# Write scripts
+write_launch_script()
+{
+  if [ ! -d "$APPBINDIR" ]
+  then
+    mkdir -p "$APPBINDIR"
+  fi
+
+  if [ ! -d "$APPBINDIR" ]
+  then
+    echo "*** Sorry, the directory $APPBINDIR could not be created."
+  else
+    echo "#!/bin/sh" > "$APPBINDIR"/riffle
+    echo "# A script to run Riffle." >> "$APPBINDIR"/riffle
+    echo "# Set the LANG variable to not use UTF-8 since it does not work well with Riffle." >> "$APPBINDIR"/riffle
+    echo "export LANG=\`echo \$LANG | sed \"s/.UTF-8//g\"\`" >> "$APPBINDIR"/riffle
+    echo "export RIFFLEDIR=\"$RIFFLEDIR\"" >> "$APPBINDIR"/riffle
+    echo "\"$RIFFLEDIR\"/riffle" >> "$APPBINDIR"/riffle
+
+    chmod a+x "$APPBINDIR"/riffle
+    if [ -f "$APPBINDIR"/riffle ]
+    then
+      echo Wrote "$APPBINDIR"/riffle
+    fi
+  fi
+}
+
+### View readme ###
+
+view_readme()
+{
+  if [ ! -f "$RIFFLEDIR"/readme.txt ]
+  then
+    echo "Sorry -- you must unarchive the distribution before you can"
+    echo "view the readme."
+  else
+    $MYPAGER "$RIFFLEDIR"/readme.txt
+  fi
+}
+
+### Launch the application ###
+
+launch_application()
+{
+  if [ ! -f "$APPBINDIR"/riffle ]
+  then
+    echo "Sorry -- you must unarchive the distribution before you can"
+    echo "launch the application."
+  else
+    "$APPBINDIR"/riffle
+  fi
+}
+
+preliminary_notes()
+{
+  selectdone1=0
+  ans="n"
+  while [ "$ans" != "y" ]
+  do
+    echo
+    echo The directory to install the application to is $RIFFLEDIR.
+    echo The directory to install the launch script to is "$APPBINDIR".
+    echo
+    echo "Please check these settings carefully."
+    echo "Are they correct? (y/n)"
+    echo
+
+    read ans
+
+    if [ "$ans" != "y" ]
+    then
+      select_dir
+      select_script_dir
+    fi
+  done
+}
+
+  ############# MAIN BIT OF THE SCRIPT #################
+  clear
+  echo
+  echo "--------------------------------------------------------------"
+  echo "Welcome to the Riffle __RIFFLEVERSION__ installation."
+  echo "--------------------------------------------------------------"
+  echo
+  echo "This script will install Riffle from the archive:"
+  echo ""
+  echo "  "$ARCHIVE".tar.gz"
+  echo ""
+
+  select_dir
+  select_script_dir
+  preliminary_notes
+
+  useroption='none'
+  while [ "$useroption" != "0" ]
+  do
+    builtit=""
+    installfirst=""
+
+    if [ -f "$APPBINDIR/riffle" ] && [ -f "$RIFFLEDIR/readme.txt" ]
+    then
+      builtit=" (done)"
+    else
+      installfirst=" (install first)"
+    fi
+
+    echo ""
+    echo "--------------------------------------------------------------"
+    echo "Riffle __RIFFLEVERSION__ Installation Menu"
+    echo "--------------------------------------------------------------"
+    echo ""
+
+    if [ "$builtit" = "" ]
+    then
+      echo "Ready to install application to $RIFFLEDIR"
+      echo "and launch script to $APPBINDIR."
+      echo ""
+    fi
+    echo "Please type a number followed by return to choose an option:"
+    echo ""
+    echo " 1) Install Riffle and its launch script"$builtit"."
+    echo " 2) View the readme, with a few words of introduction"$installfirst"."
+    echo " 3) Launch Riffle"$installfirst"."
+    echo " 4) Change the application installation directory."
+    echo " 5) Change the launch script installation directory."
+    echo "--------------------------------------------------------------"
+    echo " 0) Exit from installation."
+    echo
+    read useroption
+
+    if [ "$useroption" = "1" ]
+    then
+      install_from_gzip
+      write_launch_script
+
+      echo ""
+
+      if [ -f "$APPBINDIR/riffle" ] && [ -f "$RIFFLEDIR/readme.txt" ]
+      then
+        echo "*** Success! Riffle was installed."
+      else
+        echo "*** Sorry, Riffle was not installed correctly."
+        echo "Please check you have permission for the paths you specified."
+      fi
+    fi
+    if [ "$useroption" = "2" ]
+    then
+      view_readme
+    fi
+    if [ "$useroption" = "3" ]
+    then
+      launch_application
+    fi
+    if [ "$useroption" = "4" ]
+    then
+      select_dir
+    fi
+    if [ "$useroption" = "5" ]
+    then
+      select_script_dir
+    fi
+  done
+  clear
+  echo ""
+  if [ -f "$APPBINDIR/riffle" ] && [ -f "$RIFFLEDIR/readme.txt" ]
+  then
+    echo "Goodbye! Your Riffle installation was successful."
+    echo "If you have "$APPBINDIR" in your PATH you can simply type"
+    echo "'riffle' to get started; otherwise run "$RIFFLEDIR/riffle"."
+    echo ""
+    echo "You may now delete "Riffle-__RIFFLEVERSION__.tar.gz" and RiffleData.tar.gz."
+    echo "To uninstall Riffle in the future, remove the following files:"
+    echo ""
+    echo "$APPBINDIR"/riffle
+    echo $RIFFLEDIR
+  else
+    echo "Goodbye!"
+  fi
+  echo ""
+  echo "For support, please visit:"
+  echo ""
+  echo "http://www.wxwidgets.org/book"
+  echo ""
+
+

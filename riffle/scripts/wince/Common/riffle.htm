@@ -1,0 +1,802 @@
+<HTML>
+<HEAD>
+<KEYWORD VALUE="Contents" TITLE="Contents" HREF="riffle.htm#doc-0003">
+<KEYWORD VALUE="Welcome;to;Riffle" TITLE="Welcome to Riffle" HREF="riffle.htm#doc-0004">
+<KEYWORD VALUE="Credits" TITLE="Credits" HREF="riffle.htm#doc-0005">
+<KEYWORD VALUE="Installation" TITLE="Installation" HREF="riffle.htm#doc-0006">
+<KEYWORD VALUE="Release;notes" TITLE="Release notes" HREF="riffle.htm#doc-0007">
+<KEYWORD VALUE="What's;New?" TITLE="What's New?" HREF="riffle.htm#doc-0077">
+<KEYWORD VALUE="Riffle;user;interface" TITLE="Riffle user interface" HREF="riffle.htm#doc-0011">
+<KEYWORD VALUE="Menubar" TITLE="Menubar" HREF="riffle.htm#doc-0012">
+<KEYWORD VALUE="Main;toolbar" TITLE="Main toolbar" HREF="riffle.htm#doc-0013">
+<KEYWORD VALUE="Directory;browser" TITLE="Directory browser" HREF="riffle.htm#doc-0015">
+<KEYWORD VALUE="Thumbnail;browser" TITLE="Thumbnail browser" HREF="riffle.htm#doc-0016">
+<KEYWORD VALUE="Image;viewer" TITLE="Image viewer" HREF="riffle.htm#doc-0017">
+<KEYWORD VALUE="Using;menubar;commands" TITLE="Using menubar commands" HREF="riffle.htm#doc-0041">
+<KEYWORD VALUE="Using;toolbar;commands" TITLE="Using toolbar commands" HREF="riffle.htm#doc-0042">
+<KEYWORD VALUE="Using;dialogs" TITLE="Using dialogs" HREF="riffle.htm#doc-0043">
+<KEYWORD VALUE="Settings;dialog" TITLE="Settings dialog" HREF="riffle.htm#doc-0044">
+<KEYWORD VALUE="General;settings" TITLE="General settings" HREF="riffle.htm#doc-0045">
+<KEYWORD VALUE="Using;keyboard;shortcuts" TITLE="Using keyboard shortcuts" HREF="riffle.htm#doc-0076">
+
+<TITLE>Riffle</TITLE>
+<META HTTP-EQUIV="Htm-Help" Content="riffle.htm#Main_Contents">
+
+</HEAD>
+<BODY>
+
+
+
+
+
+
+
+
+<CENTER>
+<FONT SIZE="+2"><B>Riffle Version 1.0</B><p>
+A little image viewer application
+</FONT><P>
+&copy; Julian Smart, Anthemion Software Ltd.
+</CENTER><P>
+<P><H2>Contents</H2><P><P>
+
+<ul>
+
+  <a href="riffle.htm#doc-0004">Welcome to Riffle</a><BR>
+
+  <a href="riffle.htm#doc-0006">Installation</a><BR>
+
+  <a href="riffle.htm#doc-0007">Release notes</a><BR>
+
+  <a href="riffle.htm#doc-0011">Riffle user interface</a><BR>
+
+  <a href="riffle.htm#doc-0041">Using menubar commands</a><BR>
+
+  <a href="riffle.htm#doc-0042">Using toolbar commands</a><BR>
+
+  <a href="riffle.htm#doc-0043">Using dialogs</a><BR>
+
+  <a href="riffle.htm#doc-0076">Using keyboard shortcuts</a><BR>
+</ul>
+
+</FONT>
+
+
+
+
+
+
+
+
+<A NAME="doc-0004"></a>
+<H2>Welcome to Riffle</H2>
+Welcome to Riffle, a simple image browser application. Riffle lets you:<P>
+
+<UL>
+<LI> browse directories of images;
+<LI> view images;
+<LI> copy images to the clipboard.
+</UL>
+<P>
+
+Riffle is available on Windows, Linux and MacOS X.<P>
+
+<H3>Riffle and wxWidgets</H3>
+
+This application is supplied for demonstration purposes,
+on the CD-ROM accompanying the book <i>Cross-Platform GUI Programming with wxWidgets CD-ROM</i>.<P>
+
+wxWidgets techniques demonstrated by Riffle include:<P>
+
+<ul>
+<li> Menu bar and toolbar usage.
+<li> Sizer-based layout (using DialogBlocks).
+<li> The wxPropertySheetDialog settings dialog.
+<li> Use of wxSplitterWindow, wxGenericDirCtrl and wxThumbnailCtrl.
+<li> Image loading, scaling and drawing.
+<li> Use of wxUpdateUIEvent.
+<li> Idle-time processing, checking for a screen orientation change under Pocket PC.
+<li> Use of wxConfig and a custom validator class, wxConfigValidator.
+<li> Creation of installations suitable for each supported platform.
+<li> Use of online help in Windows HTML Help, wxWidgets HTML Help and Windows CE Help format (using Anthemion HelpBlocks).
+</ul>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0005"></a>
+<H2>Credits</H2>
+<CENTER>
+
+<table cellpadding=10 border=1 align=center width="80%">
+<tr>
+<td align=center>
+Design and coding by Julian Smart<P>
+
+Thanks to all the talented contributors at www.wxwidgets.org
+<br>
+&nbsp;
+<P>
+
+</td>
+</tr>
+</table>
+
+</CENTER>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0006"></a>
+<H2>Installation</H2>
+<B>On Windows:</B><P>
+
+Please run the installation program. This will create a program
+group called Anthemion Riffle x.y (or other name if you have chosen a different name). This
+folder can be accessed via the Start menu under Programs. The
+folder contains shortcuts to the program, help file, and Uninstall program.<P>
+You can uninstall Riffle either by double-clicking the Uninstall Riffle icon
+in the Riffle group, or by invoking the Windows Control Panel,
+double-clicking on Add/Remove Programs, and then choosing the Anthemion Riffle item.<P>
+
+<B>On Linux:</B><P>
+Unarchive Riffle-x.yz-i386.tar.gz to a suitable location
+in your filesystem. A directory of the form Riffle-x.yz
+(where x.yz is the version number) will be created.<P>
+Add the location to your PATH and run the application with
+'riffle'. You may wish to set the environment variable
+RIFFLEDIR so that Riffle can find its data files.<P>
+For example:<P>
+<PRE>
+  % cd ~
+  % tar xvfz Riffle-1.01.tar.gz
+  % export RIFFLEDIR=`pwd`/Riffle-1.0
+  % export PATH=$PATH:$RIFFLEDIR
+  % riffle
+</PRE>
+If you don't want to change your PATH, you could place a
+script in a location already on your PATH, such as
+/usr/local/bin. For example:<P>
+<PRE>
+  #!/bin/sh
+  # Invokes Riffle
+  export RIFFLEDIR=/home/mydir/Riffle-1.0
+  $RIFFLEDIR/riffle $*
+</PRE>
+
+<P>
+<B>On Mac OS X:</B><P>
+
+Download Riffle-x.yz.dmg and click to unarchive the disk image.
+Copy the folder to a suitable location on your hard disk,
+and run the Riffle application contained in the folder.
+To uninstall, simple drag the folder to the trash can.
+<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0007"></a>
+<H2>Release notes</H2>
+<B>Riffle License Agreement</B><P>
+
+Riffle is licensed under the wxWindows Licence. Please see
+wxWidgets.org for details.<P>
+
+Copyright (c) 2002-2005 Julian Smart.  All rights reserved.<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0077"></a>
+<H2>What's New?</H2>
+<B>Version 1.0, April 12th 2005</B><P>
+
+<UL>
+<LI> Initial release.
+</UL>
+
+<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0011"></a>
+<H2>Riffle user interface</H2>
+
+<P>
+
+Please click on a topic below to learn about
+the individual Riffle windows.<P>
+
+<UL>
+<LI> 
+  <a href="riffle.htm#doc-0012">Menubar</a>
+<LI> 
+  <a href="riffle.htm#doc-0013">Main toolbar</a>
+<LI> 
+  <a href="riffle.htm#doc-0015">Directory browser</a>
+<LI> 
+  <a href="riffle.htm#doc-0016">Thumbnail browser</a>
+<LI> 
+  <a href="riffle.htm#doc-0017">Image viewer</a>
+</UL>
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0012"></a>
+<H2>Menubar</H2>
+The 
+  <a href="riffle.htm#doc-0041.htm">menubar</a> allows you to perform many functions
+such as loading and saving files, creating new projects and dialogs,
+undo/redo, invoking help, and so on. Try to remember the keyboard shortcuts that are
+displayed next to the menu item labels - they can save you a lot of time
+and make your Riffle experience more natural and enjoyable.
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0013"></a>
+<H2>Main toolbar</H2>
+The main toolbar gives quick access to commonly-used commands.
+If you hold your mouse pointer over the toolbar buttons, a tooltip pops up with a short description
+of the button's function. You can choose to hide the toolbar altogether
+using the <B>View | Show Main Toolbar</B> menu command.<P>
+You can find out more about in the 
+  <a href="riffle.htm#doc-0042.htm">main toolbar commands</a> topic.<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0015"></a>
+<H2>Directory browser</H2>
+The directory browser shows you the folders on your computer.
+Double-click on a folder to expand the folder, or click on
+the plus button. Images in folders will be displayed
+in the thumbnail browser on the right.
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0016"></a>
+<H2>Thumbnail browser</H2>
+The thumbnail browser shows the images in the selected folder.
+You can scroll through the thumbnails; clicking on an image shows
+it in the image viewer (replacing the thumbnail window).
+<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0017"></a>
+<H2>Image viewer</H2>
+The image viewer shows an image you clicked on in the thumbnail
+browser. You can zoom in and out, fit the image to the window, or
+show at full size using the toolbar buttons.
+<P>
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0041"></a>
+<H2>Using menubar commands</H2>
+This topic describes the function of the menubar commands.<P>
+
+<CENTER>
+<A HREF="#filemenu">File</A> |
+<A HREF="#editmenu">Edit</A> |
+<A HREF="#viewmenu">View</A> |
+<A HREF="#helpmenu">Help</A>
+</CENTER><P>
+
+<H3><A NAME="filemenu">File menu</A></H3>
+
+<TABLE>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Exit (Alt+F4)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Quits the application.
+</FONT></TD></TR>
+
+
+</TABLE>
+
+<P>
+
+<H3><A NAME="editmenu">Edit menu</A></H3>
+
+<TABLE>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Copy (Ctrl+C)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Copies the viewed image to the clipboard.
+</FONT></TD></TR>
+
+
+</TABLE>
+
+<H3><A NAME="viewmenu">View menu</A></H3>
+
+<TABLE>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Show Thumbnails (Ctrl+T)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the thumbnails browser.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30></TD><TD COLSPAN=2>
+<FONT FACE="Arial, Lucida, Helvetica">
+<HR COLOR=#C0C0C0>
+</FONT></TD>
+</TR>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Zoom In (+)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Increases the zoom level on the selected image.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Zoom Out (-)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Decreases the zoom level on the selected image.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Actual Size (Ctrl+S)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the image at actual size.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Fit Window (Ctrl+F)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Fits the image to the size of the image browser window.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30></TD><TD COLSPAN=2>
+<FONT FACE="Arial, Lucida, Helvetica">
+<HR COLOR=#C0C0C0>
+</FONT></TD>
+</TR>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Settings... (Ctrl+P)</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+Displays the Settings dialog, which allows editing of
+a variety of preferences. See 
+  <a href="riffle.htm#doc-0044">Settings Dialog</a>.
+</FONT></TD></TR>
+
+
+</TABLE>
+
+<H3><A NAME="helpmenu">Help menu</A></H3>
+
+<TABLE>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Help Contents</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the online help contents.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>What's This?</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ After selecting this command, click on a Riffle window to view a short
+tip describing its function.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30></TD><TD COLSPAN=2>
+<FONT FACE="Arial, Lucida, Helvetica">
+<HR COLOR=#C0C0C0>
+</FONT></TD>
+</TR>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>About</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows an About box giving version and build information.
+</FONT></TD></TR>
+
+</TABLE>
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0042"></a>
+<H2>Using toolbar commands</H2>
+
+<TABLE>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Zoom In</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Increases the scale on the currently viewed image.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Zoom Out</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Decreases the scale on the currently viewed image.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Fit Window</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Fits the image to the image viewer window.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Actual Size</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the image at its actual size.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Show Thumbnails</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the thumbnail browser.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Copy</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Copies the current image to the clipboard.
+</FONT></TD></TR>
+
+<!--
+
+<TR><TD WIDTH=30></TD><TD COLSPAN=2>
+<FONT FACE="Arial, Lucida, Helvetica">
+<HR COLOR=#C0C0C0>
+</FONT></TD>
+</TR>
+-->
+</TABLE>
+<P>
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0043"></a>
+<H2>Using dialogs</H2>
+
+The next sections describe the dialogs used in Riffle.
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0044"></a>
+<H2>Settings dialog</H2>
+Currently there is only one page in the settings dialog, the General Settings page.
+
+<P>
+
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0045"></a>
+<H2>General settings</H2>
+The general settings dialog allows you to change various
+global preferences.<P>
+
+<TABLE>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Remember last directory</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Check to show the last-browsed directory when Riffle loads.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Zoom by</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ The percentage that the image zooms every time you click the + or - buttons.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Thumbnail size</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ The size in pixels of the thumbnails.
+</FONT></TD></TR>
+
+</TABLE>
+<P>
+
+
+<!-- PegHelp -->
+
+
+
+
+
+
+
+<A NAME="doc-0076"></a>
+<H2>Using keyboard shortcuts</H2>
+Keyboard shortcuts are a great way to speed up your work.
+Look for them when you use menu commands, and try
+to remember them for next time you use the commands.<P>
+
+These are the shortcuts for navigating the Riffle
+user interface.<P>
+
+<TABLE>
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Ctrl+C</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Copies the currently viewed image to the clipboard.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Ctrl+F</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Fits the image to the image viewer window.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Ctrl+P</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the Settings dialog.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Ctrl+S</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the image at its actual size.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Ctrl+T</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Shows the thumbnails browser.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>+</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Zooms in.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>-</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Zooms out.
+</FONT></TD></TR>
+
+
+<TR><TD WIDTH=30>
+<TD VALIGN=TOP WIDTH=158>
+<FONT FACE="Arial, Lucida, Helvetica">
+<B>Alt+F4</B>
+</FONT></TD>
+<TD VALIGN=TOP>
+<FONT FACE="Arial, Lucida, Helvetica">
+ Quits Riffle.
+</FONT></TD></TR>
+
+</TABLE>
+
+
+<!-- PegHelp -->
+
+</BODY>
+</HTML>

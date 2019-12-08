@@ -1,0 +1,43 @@
+; Variables such as %APPTITLE% are not part of the Inno Setup file format,
+; but are intended to be instantiated by the release script.
+; See makesetup.sh and setup.var.
+
+; For debug beta only
+;    Source: c:\winnt\system32\msvcrtd.dll; DestDir: {sys}\; DestName: msvcrtd.dll; CopyMode: onlyifdoesntexist; Flags: uninsneveruninstall
+
+
+[Tasks]
+	Name: desktopicon; Description: "Create a &desktop icon"; GroupDescription: "Additional icons:"
+
+[Icons]
+    Name: {group}\%APPTITLE% %VERSION%; Filename: {app}\%APPNAME%.exe; WorkingDir: {app}; IconFilename: {app}\%APPNAME%.exe; IconIndex: 0
+    Name: {group}\%APPTITLE% Help; Filename: {app}\APPNAME%.chm; WorkingDir: {app}; IconIndex: 0; Flags: useapppaths
+    Name: {group}\%APPTITLE% ReadMe; Filename: {app}\readme.txt; WorkingDir: {app}; IconIndex: 0; Flags: useapppaths
+    Name: {group}\%APPTITLE% Source; Filename: {app}\RiffleSource.zip; WorkingDir: {app}; IconIndex: 0; Flags: useapppaths
+    Name: {userdesktop}\%VENDOR% %APPTITLE% %VERSION%; Filename: {app}\%APPNAME%.exe; WorkingDir: {app}; IconFilename: {app}\%APPNAME%.exe; IconIndex: 0; Tasks: desktopicon
+    Name: "{group}\Uninstall %APPTITLE% %VERSION%"; Filename: "{uninstallexe}"
+
+[Registry]
+
+; Register a data file extension.
+; You may need to replace some of the %APPTITLE% occurrences below with a hard-wired
+; name if your title contains spaces.
+
+;    Root: HKCR; SubKey: .%APPEXTENSION%; ValueType: STRING; ValueData: %APPTITLE%File; Flags: uninsdeletevalue
+;    Root: HKCR; SubKey: %APPTITLE%File; ValueType: STRING; ValueData: "%APPTITLE% Document File"; Flags: uninsdeletevalue
+;    Root: HKCR; SubKey: %APPTITLE%File\Shell; ValueType: NONE; Flags: uninsdeletevalue
+;    Root: HKCR; SubKey: %APPTITLE%File\Shell\Open; ValueType: NONE; Flags: uninsdeletevalue
+;    Root: HKCR; SubKey: %APPTITLE%File\Shell\Open\Command; ValueType: STRING; ValueData: "{app}\%APPNAME%.exe ""%1"""; Flags: uninsdeletevalue
+;    Root: HKCR; SubKey: %APPTITLE%File\DefaultIcon; ValueType: STRING; ValueData: {app}\%APPNAME%.exe,0; Flags: uninsdeletevalue
+
+[UninstallDelete]
+;    Type: files; Name: "{app}\datafile.db"
+
+[InstallDelete]
+
+[Run] 
+	Filename: "{app}\%APPNAME%.exe"; Description: "Launch %APPTITLE%"; Flags: postinstall nowait skipifsilent
+
+[UninstallRun]
+
+

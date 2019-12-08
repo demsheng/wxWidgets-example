@@ -1,0 +1,43 @@
+<B>On Windows:</B><P>
+
+Please run the installation program. This will create a program
+group called Anthemion Riffle x.y (or other name if you have chosen a different name). This
+folder can be accessed via the Start menu under Programs. The
+folder contains shortcuts to the program, help file, and Uninstall program.<P>
+You can uninstall Riffle either by double-clicking the Uninstall Riffle icon
+in the Riffle group, or by invoking the Windows Control Panel,
+double-clicking on Add/Remove Programs, and then choosing the Anthemion Riffle item.<P>
+
+<B>On Linux:</B><P>
+Unarchive Riffle-x.yz-i386.tar.gz to a suitable location
+in your filesystem. A directory of the form Riffle-x.yz
+(where x.yz is the version number) will be created.<P>
+Add the location to your PATH and run the application with
+'riffle'. You may wish to set the environment variable
+RIFFLEDIR so that Riffle can find its data files.<P>
+For example:<P>
+<PRE>
+  % cd ~
+  % tar xvfz Riffle-1.01.tar.gz
+  % export RIFFLEDIR=`pwd`/Riffle-1.0
+  % export PATH=$PATH:$RIFFLEDIR
+  % riffle
+</PRE>
+If you don't want to change your PATH, you could place a
+script in a location already on your PATH, such as
+/usr/local/bin. For example:<P>
+<PRE>
+  #!/bin/sh
+  # Invokes Riffle
+  export RIFFLEDIR=/home/mydir/Riffle-1.0
+  $RIFFLEDIR/riffle $*
+</PRE>
+
+<P>
+<B>On Mac OS X:</B><P>
+
+Download Riffle-x.yz.dmg and click to unarchive the disk image.
+Copy the folder to a suitable location on your hard disk,
+and run the Riffle application contained in the folder.
+To uninstall, simple drag the folder to the trash can.
+<P>

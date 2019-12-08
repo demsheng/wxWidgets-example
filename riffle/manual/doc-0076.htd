@@ -1,0 +1,18 @@
+Keyboard shortcuts are a great way to speed up your work.
+Look for them when you use menu commands, and try
+to remember them for next time you use the commands.<P>
+
+These are the shortcuts for navigating the Riffle
+user interface.<P>
+
+<TABLE>
+MENUITEM(Ctrl+C, Copies the currently viewed image to the clipboard.)
+MENUITEM(Ctrl+F, Fits the image to the image viewer window.)
+MENUITEM(Ctrl+P, Shows the Settings dialog.)
+MENUITEM(Ctrl+S, Shows the image at its actual size.)
+MENUITEM(Ctrl+T, Shows the thumbnails browser.)
+MENUITEM(+, Zooms in.)
+MENUITEM(-, Zooms out.)
+MENUITEM(Alt+F4, Quits Riffle.)
+</TABLE>
+

@@ -1,0 +1,23 @@
+
+<TABLE>
+#ifdef _FORMAT_SINGLE_FILE
+MENUITEM(Zoom In, Increases the scale on the currently viewed image.)
+MENUITEM(Zoom Out, Decreases the scale on the currently viewed image.)
+MENUITEM(Fit Window, Fits the image to the image viewer window.)
+MENUITEM(Actual Size, Shows the image at its actual size.)
+MENUITEM(Show Thumbnails, Shows the thumbnail browser.)
+MENUITEM(Copy, Copies the current image to the clipboard.)
+#else
+MENUITEM(<IMG SRC="zoomin.png"> &nbsp;Zoom In, Increases the scale on the currently viewed image.)
+MENUITEM(<IMG SRC="zoomout.png"> &nbsp;Zoom Out, Decreases the scale on the currently viewed image.)
+MENUITEM(<IMG SRC="fitwindow.png"> &nbsp;Fit Window, Fits the image to the image viewer window.)
+MENUITEM(<IMG SRC="actualsize.png"> &nbsp;Actual Size, Shows the image at its actual size.)
+MENUITEM(<IMG SRC="browse.png"> &nbsp;Show Thumbnails, Shows the thumbnail browser.)
+MENUITEM(<IMG SRC="copy.png"> &nbsp;Copy, Copies the current image to the clipboard.)
+#endif
+<!--
+MENURULE
+-->
+</TABLE>
+<P>
+

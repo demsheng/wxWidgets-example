@@ -1,0 +1,34 @@
+#ifndef _FORMAT_SINGLE_FILE
+<P><HTML>
+<HEAD><TITLE>Riffle</TITLE></HEAD>
+
+<BODY TOPMARGIN=4 BGCOLOR=#FFFFFF TEXT=#000000 VLINK=#000000 LINK=#000000 ALINK=#000000>
+<FONT FACE="Arial, Lucida, Helvetica">
+#endif
+
+<CENTER>
+<FONT SIZE="+2"><B>Riffle Version 1.0</B><p>
+A little image viewer application
+</FONT><P>
+&copy; Julian Smart, Anthemion Software Ltd.
+</CENTER><P>
+<P><H2>Contents</H2><P><P>
+
+<ul>
+_HREF(doc-0004,Welcome to Riffle)<BR>
+_HREF(doc-0006,Installation)<BR>
+_HREF(doc-0007,Release notes)<BR>
+_HREF(doc-0011,Riffle user interface)<BR>
+_HREF(doc-0041,Using menubar commands)<BR>
+_HREF(doc-0042,Using toolbar commands)<BR>
+_HREF(doc-0043,Using dialogs)<BR>
+_HREF(doc-0076,Using keyboard shortcuts)<BR>
+</ul>
+
+</FONT>
+
+#ifndef _FORMAT_SINGLE_FILE
+</BODY>
+
+</HTML>
+#endif
