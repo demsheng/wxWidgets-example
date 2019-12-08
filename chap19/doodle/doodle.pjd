@@ -1,0 +1,1059 @@
+<?xml version="1.0" ?>
+
+<path name="Header">
+	<value name="FileVersion" type="string">1.0</value>
+	<value name="AppName" type="string">dialogblocks</value>
+	<value name="VendorName" type="string"></value>
+	<value name="FileType" type="string">Project File</value>
+</path>
+<path name="projtree">
+	<value name="name_counter" type="Integer">0</value>
+	<value name="html_path" type="string"></value>
+	<value name="title" type="string"></value>
+	<value name="author" type="string"></value>
+	<value name="description" type="string"></value>
+	<value name="doc_count" type="Integer">27</value>
+	<value name="xrc_filename" type="string"></value>
+	<value name="convert_images_to_xpm" type="bool">FALSE</value>
+	<value name="inline_images" type="bool">FALSE</value>
+	<value name="generate_cpp_for_xrc" type="bool">FALSE</value>
+	<value name="use_help_text_for_tooltips" type="bool">TRUE</value>
+	<value name="translate_strings" type="bool">TRUE</value>
+	<value name="extract_strings" type="bool">FALSE</value>
+	<value name="user_name" type="string"></value>
+	<value name="copyright_string" type="string"></value>
+	<value name="resource_prefix" type="string"></value>
+	<value name="use_two_step_construction" type="bool">FALSE</value>
+	<value name="current_platform" type="string">&lt;All platforms&gt;</value>
+	<value name="target_wx_version" type="string">2.6.0</value>
+	<value name="cpp_header_comment" type="string">/////////////////////////////////////////////////////////////////////////////
+// Name:        %HEADER-FILENAME%
+// Purpose:     
+// Author:      %AUTHOR%
+// Modified by: 
+// Created:     %DATE%
+// RCS-ID:      
+// Copyright:   %COPYRIGHT%
+// Licence:     
+/////////////////////////////////////////////////////////////////////////////
+
+</value>
+	<value name="cpp_implementation_comment" type="string">/////////////////////////////////////////////////////////////////////////////
+// Name:        %SOURCE-FILENAME%
+// Purpose:     
+// Author:      %AUTHOR%
+// Modified by: 
+// Created:     %DATE%
+// RCS-ID:      
+// Copyright:   %COPYRIGHT%
+// Licence:     
+/////////////////////////////////////////////////////////////////////////////
+
+</value>
+	<value name="cpp_function_comment" type="string">/*!
+ * %BODY%
+ */
+
+</value>
+	<value name="cpp_symbols_file_comment" type="string">/////////////////////////////////////////////////////////////////////////////
+// Name:        %SYMBOLS-FILENAME%
+// Purpose:     Symbols file
+// Author:      %AUTHOR%
+// Modified by: 
+// Created:     %DATE%
+// RCS-ID:      
+// Copyright:   %COPYRIGHT%
+// Licence:     
+/////////////////////////////////////////////////////////////////////////////
+
+</value>
+	<value name="resource_file_header" type="string">app_resources.h</value>
+	<value name="resource_file_implementation" type="string">app_resources.cpp</value>
+	<value name="resource_class_name" type="string">AppResources</value>
+	<value name="app_file_header" type="string">app.h</value>
+	<value name="app_file_implementation" type="string">app.cpp</value>
+	<value name="app_class_name" type="string">Application</value>
+	<value name="generate_app_class" type="bool">FALSE</value>
+	<value name="external_symbol_filenames" type="string"></value>
+	<value name="configuration" type="string">VC++ Debug</value>
+	<path name="ID000000">
+		<value name="title" type="string"></value>
+		<value name="id" type="Integer">34844872</value>
+		<value name="type" type="string">data-document</value>
+		<value name="filename" type="string"></value>
+		<value name="icon-name" type="string"></value>
+		<value name="is-transient" type="Integer">0</value>
+		<value name="owns-file" type="Integer">1</value>
+		<value name="title-mode" type="Integer">0</value>
+		<value name="parent" type="Integer">0</value>
+		<value name="locked" type="Integer">0</value>
+		<path name="ID000001">
+			<value name="title" type="string">Configurations</value>
+			<value name="id" type="Integer">32999328</value>
+			<value name="type" type="string">config-data-document</value>
+			<value name="filename" type="string"></value>
+			<value name="icon-name" type="string"></value>
+			<value name="is-transient" type="Integer">0</value>
+			<value name="owns-file" type="Integer">1</value>
+			<value name="title-mode" type="Integer">0</value>
+			<value name="parent" type="Integer">34844872</value>
+			<value name="locked" type="Integer">0</value>
+			<value name="template-name" type="string"></value>
+			<value name="dirty" type="bool">TRUE</value>
+			<value name="Compiler name" type="string"></value>
+			<value name="Build mode" type="string">Debug</value>
+			<value name="Unicode mode" type="string">ANSI</value>
+			<value name="Shared mode" type="string">Static</value>
+			<value name="Modularity" type="string">Modular</value>
+			<value name="GUI mode" type="string">GUI</value>
+			<value name="Toolkit" type="string">wxMSW</value>
+			<value name="Runtime linking" type="string">Dynamic</value>
+			<value name="Use exceptions" type="string">Yes</value>
+			<value name="Use ODBC" type="string">No</value>
+			<value name="Use OpenGL" type="string">No</value>
+			<value name="wxWidgets version" type="string">%WXVERSION%</value>
+			<value name="Executable name" type="string">%EXECUTABLE%</value>
+			<value name="Program arguments" type="string"></value>
+			<value name="Working path" type="string">%AUTO%</value>
+			<value name="Output path" type="string">%AUTO%</value>
+			<value name="Objects path" type="string">%AUTO%</value>
+			<value name="Compiler location" type="string">%AUTO%</value>
+			<value name="wxWidgets location" type="string">%AUTO%</value>
+			<value name="C++ command" type="string">%AUTO%</value>
+			<value name="Resource compiler" type="string">%AUTO%</value>
+			<value name="Make command" type="string">%AUTO%</value>
+			<value name="Project makefile" type="string">%AUTO%</value>
+			<value name="wxWidgets makefile" type="string">%AUTO%</value>
+			<value name="Compiler bin path" type="string">%AUTO%</value>
+			<value name="Compiler include path" type="string">%AUTO%</value>
+			<value name="Compiler lib path" type="string">%AUTO%</value>
+			<value name="Preprocessor flags" type="string">%AUTO%</value>
+			<value name="Optimizations" type="string">%AUTO%</value>
+			<value name="Warnings" type="string">%AUTO%</value>
+			<value name="Debug flags" type="string">%AUTO%</value>
+			<value name="Libraries" type="string">%AUTO%</value>
+			<value name="Linker flags" type="string">%AUTO%</value>
+			<value name="Include path" type="string">%AUTO%</value>
+			<value name="Library path" type="string">%AUTO%</value>
+			<value name="Resource flags" type="string">%AUTO%</value>
+			<value name="Resource path" type="string">%AUTO%</value>
+			<value name="wxWidgets build path" type="string">%AUTO%</value>
+			<value name="wxWidgets build command" type="string">%AUTO%</value>
+			<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			<path name="ID000002">
+				<value name="title" type="string">GCC Debug GTK+</value>
+				<value name="id" type="Integer">34894672</value>
+				<value name="type" type="string">gcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">GCC</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">GCC</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxGTK+2</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="Use wx-config" type="string">Yes</value>
+				<value name="Use installed wxWidgets" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+				<value name="Command for wx-config" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000003">
+				<value name="title" type="string">GCC Release GTK+</value>
+				<value name="id" type="Integer">15727320</value>
+				<value name="type" type="string">gcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">GCC</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">GCC</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxGTK+2</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="Use wx-config" type="string">Yes</value>
+				<value name="Use installed wxWidgets" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+				<value name="Command for wx-config" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000004">
+				<value name="title" type="string">VC++ Debug</value>
+				<value name="id" type="Integer">33091256</value>
+				<value name="type" type="string">vc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">VC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">VC++</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000005">
+				<value name="title" type="string">VC++ Release</value>
+				<value name="id" type="Integer">33102592</value>
+				<value name="type" type="string">vc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">VC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">VC++</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000006">
+				<value name="title" type="string">MinGW Debug</value>
+				<value name="id" type="Integer">16301520</value>
+				<value name="type" type="string">mingw-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">MinGW</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">MinGW</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000007">
+				<value name="title" type="string">MinGW Release</value>
+				<value name="id" type="Integer">16199136</value>
+				<value name="type" type="string">mingw-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">MinGW</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">MinGW</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000008">
+				<value name="title" type="string">DMC++ Debug</value>
+				<value name="id" type="Integer">33810336</value>
+				<value name="type" type="string">dmc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">DMC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">DMC++</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID000009">
+				<value name="title" type="string">DMC++ Release</value>
+				<value name="id" type="Integer">16120656</value>
+				<value name="type" type="string">dmc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">DMC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">DMC++</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000a">
+				<value name="title" type="string">Watcom C++ Debug</value>
+				<value name="id" type="Integer">33140344</value>
+				<value name="type" type="string">openwatcom-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">Watcom C++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">Watcom C++</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000b">
+				<value name="title" type="string">Watcom C++ Release</value>
+				<value name="id" type="Integer">33041920</value>
+				<value name="type" type="string">openwatcom-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">Watcom C++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">Watcom C++</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000c">
+				<value name="title" type="string">BC++ Debug</value>
+				<value name="id" type="Integer">33216888</value>
+				<value name="type" type="string">bcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">BC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">BC++</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000d">
+				<value name="title" type="string">BC++ Release</value>
+				<value name="id" type="Integer">34126488</value>
+				<value name="type" type="string">bcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">BC++</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">BC++</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMSW</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000e">
+				<value name="title" type="string">GCC Release Mac</value>
+				<value name="id" type="Integer">15886216</value>
+				<value name="type" type="string">gcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">GCC</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">GCC</value>
+				<value name="Build mode" type="string">Release</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMac</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="Use wx-config" type="string">Yes</value>
+				<value name="Use installed wxWidgets" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+				<value name="Command for wx-config" type="string">%AUTO%</value>
+			</path>
+			<path name="ID00000f">
+				<value name="title" type="string">GCC Debug Mac</value>
+				<value name="id" type="Integer">15851864</value>
+				<value name="type" type="string">gcc-config-data-document</value>
+				<value name="filename" type="string"></value>
+				<value name="icon-name" type="string"></value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">1</value>
+				<value name="title-mode" type="Integer">0</value>
+				<value name="parent" type="Integer">32999328</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="template-name" type="string">GCC</value>
+				<value name="dirty" type="bool">TRUE</value>
+				<value name="Compiler name" type="string">GCC</value>
+				<value name="Build mode" type="string">Debug</value>
+				<value name="Unicode mode" type="string">ANSI</value>
+				<value name="Shared mode" type="string">Static</value>
+				<value name="Modularity" type="string">Modular</value>
+				<value name="GUI mode" type="string">GUI</value>
+				<value name="Toolkit" type="string">wxMac</value>
+				<value name="Runtime linking" type="string">Dynamic</value>
+				<value name="Use exceptions" type="string">Yes</value>
+				<value name="Use ODBC" type="string">No</value>
+				<value name="Use OpenGL" type="string">No</value>
+				<value name="Use wx-config" type="string">Yes</value>
+				<value name="Use installed wxWidgets" type="string">No</value>
+				<value name="wxWidgets version" type="string">%WXVERSION%</value>
+				<value name="Executable name" type="string">%EXECUTABLE%</value>
+				<value name="Program arguments" type="string"></value>
+				<value name="Working path" type="string">%AUTO%</value>
+				<value name="Output path" type="string">%AUTO%</value>
+				<value name="Objects path" type="string">%AUTO%</value>
+				<value name="Compiler location" type="string">%AUTO%</value>
+				<value name="wxWidgets location" type="string">%AUTO%</value>
+				<value name="C++ command" type="string">%AUTO%</value>
+				<value name="Resource compiler" type="string">%AUTO%</value>
+				<value name="Make command" type="string">%AUTO%</value>
+				<value name="Project makefile" type="string">%AUTO%</value>
+				<value name="wxWidgets makefile" type="string">%AUTO%</value>
+				<value name="Compiler bin path" type="string">%AUTO%</value>
+				<value name="Compiler include path" type="string">%AUTO%</value>
+				<value name="Compiler lib path" type="string">%AUTO%</value>
+				<value name="Preprocessor flags" type="string">%AUTO%</value>
+				<value name="Optimizations" type="string">%AUTO%</value>
+				<value name="Warnings" type="string">%AUTO%</value>
+				<value name="Debug flags" type="string">%AUTO%</value>
+				<value name="Libraries" type="string">%AUTO%</value>
+				<value name="Linker flags" type="string">%AUTO%</value>
+				<value name="Include path" type="string">%AUTO%</value>
+				<value name="Library path" type="string">%AUTO%</value>
+				<value name="Resource flags" type="string">%AUTO%</value>
+				<value name="Resource path" type="string">%AUTO%</value>
+				<value name="wxWidgets build path" type="string">%AUTO%</value>
+				<value name="wxWidgets build command" type="string">%AUTO%</value>
+				<value name="wxWidgets clean command" type="string">%AUTO%</value>
+				<value name="Command for wx-config" type="string">%AUTO%</value>
+			</path>
+		</path>
+	</path>
+	<path name="ID000010">
+		<value name="title" type="string">Projects</value>
+		<value name="id" type="Integer">34917992</value>
+		<value name="type" type="string">root-document</value>
+		<value name="filename" type="string"></value>
+		<value name="icon-name" type="string">project</value>
+		<value name="is-transient" type="Integer">1</value>
+		<value name="owns-file" type="Integer">1</value>
+		<value name="title-mode" type="Integer">0</value>
+		<value name="parent" type="Integer">0</value>
+		<value name="locked" type="Integer">0</value>
+		<path name="ID000011">
+			<value name="title" type="string">Windows</value>
+			<value name="id" type="Integer">34579040</value>
+			<value name="type" type="string">html-document</value>
+			<value name="filename" type="string"></value>
+			<value name="icon-name" type="string">dialogsfolder</value>
+			<value name="is-transient" type="Integer">1</value>
+			<value name="owns-file" type="Integer">1</value>
+			<value name="title-mode" type="Integer">0</value>
+			<value name="parent" type="Integer">34917992</value>
+			<value name="locked" type="Integer">1</value>
+		</path>
+		<path name="ID000012">
+			<value name="title" type="string">Sources</value>
+			<value name="id" type="Integer">33009536</value>
+			<value name="type" type="string">html-document</value>
+			<value name="filename" type="string"></value>
+			<value name="icon-name" type="string">sourcesfolder</value>
+			<value name="is-transient" type="Integer">1</value>
+			<value name="owns-file" type="Integer">1</value>
+			<value name="title-mode" type="Integer">0</value>
+			<value name="parent" type="Integer">34917992</value>
+			<value name="locked" type="Integer">1</value>
+			<path name="ID000013">
+				<value name="title" type="string">view.h</value>
+				<value name="id" type="Integer">34953200</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">view.h</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000014">
+				<value name="title" type="string">doc.cpp</value>
+				<value name="id" type="Integer">15057960</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">doc.cpp</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000015">
+				<value name="title" type="string">doc.h</value>
+				<value name="id" type="Integer">15803288</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">doc.h</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000016">
+				<value name="title" type="string">doodle.cpp</value>
+				<value name="id" type="Integer">15866264</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">doodle.cpp</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000017">
+				<value name="title" type="string">doodle.h</value>
+				<value name="id" type="Integer">34700480</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">doodle.h</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000018">
+				<value name="title" type="string">doodle.rc</value>
+				<value name="id" type="Integer">34969496</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">doodle.rc</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+			<path name="ID000019">
+				<value name="title" type="string">view.cpp</value>
+				<value name="id" type="Integer">15801384</value>
+				<value name="type" type="string">source-editor-document</value>
+				<value name="filename" type="string">view.cpp</value>
+				<value name="icon-name" type="string">source-editor</value>
+				<value name="is-transient" type="Integer">0</value>
+				<value name="owns-file" type="Integer">0</value>
+				<value name="title-mode" type="Integer">1</value>
+				<value name="parent" type="Integer">33009536</value>
+				<value name="locked" type="Integer">0</value>
+				<value name="created" type="string">18/3/2005</value>
+				<value name="language" type="string"></value>
+			</path>
+		</path>
+		<path name="ID00001a">
+			<value name="title" type="string">Images</value>
+			<value name="id" type="Integer">15849968</value>
+			<value name="type" type="string">html-document</value>
+			<value name="filename" type="string"></value>
+			<value name="icon-name" type="string">bitmapsfolder</value>
+			<value name="is-transient" type="Integer">1</value>
+			<value name="owns-file" type="Integer">1</value>
+			<value name="title-mode" type="Integer">0</value>
+			<value name="parent" type="Integer">34917992</value>
+			<value name="locked" type="Integer">1</value>
+		</path>
+	</path>
+</path>

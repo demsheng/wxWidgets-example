@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2004-12-23 21:58+0100\n"
+"Last-Translator: Stefan Csomor <csomor@advanced.ch>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Keywords: _\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: i18n.cpp:129
+#: i18n.cpp:245
+msgid "i18n wxWidgets App"
+msgstr "i18n wxWidgets Programm"
+
+#: i18n.cpp:167
+#: i18n.cpp:181
+msgid "flag.png"
+msgstr "de/flag.png"
+
+#: i18n.cpp:178
+msgid "Welcome to International Sample"
+msgstr "Willkomen beim International Program"
+
+#: i18n.cpp:179
+#, c-format
+msgid "Now is %s"
+msgstr "Jetzt ist %s"
+
+#: i18n.cpp:180
+#, c-format
+msgid "12345 divided by 10 is written as %.1f"
+msgstr "12345 geteilt durch 10 wird geschrieben als %.1f"
+
+#: i18n.cpp:189
+msgid "&About...\tF1"
+msgstr "Ü&ber...\tF1"
+
+#: i18n.cpp:191
+msgid "Change language..."
+msgstr "Sprache ändern..."
+
+#: i18n.cpp:193
+msgid "E&xit\tAlt-X"
+msgstr "Beenden\tALT-F4"
+
+#: i18n.cpp:197
+msgid "&File"
+msgstr "&Datei "
+
+#: i18n.cpp:198
+msgid "&Help"
+msgstr "&Hilfe "
+
+#: i18n.cpp:207
+msgid "Welcome to wxWidgets!"
+msgstr "Willkommen bei wxWidgets!"
+
+#: i18n.cpp:220
+msgid "German"
+msgstr "Deutsch"
+
+#: i18n.cpp:223
+msgid "French"
+msgstr "Französisch"
+
+#: i18n.cpp:226
+msgid "English"
+msgstr "Englisch"
+
+#: i18n.cpp:228
+msgid "Select language:"
+msgstr "Sprache auswählen:"
+
+#: i18n.cpp:228
+msgid "Language"
+msgstr "Sprache"
+
+#: i18n.cpp:245
+msgid "This is the About dialog."
+msgstr "Dies ist der Über... Dialog"
+

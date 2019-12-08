@@ -1,0 +1,5 @@
+/* The first icon in the resource file is the default icon in Explorer */
+aaaaa ICON "mondrian.ico"
+
+#include "wx/msw/wx.rc"
+
