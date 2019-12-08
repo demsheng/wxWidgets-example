@@ -1,0 +1,25 @@
+/* XPM */
+static char *fitwindow_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 3 1",
+"  c Black",
+"X c #FFFFFF",
+". c None",
+/* pixels */
+"               .",
+" XXXXXX XXXXXX .",
+" XXXXX   XXXXX .",
+" XXXX     XXXX .",
+" XXXXXX XXXXXX .",
+" XX XXX XXX XX .",
+" X  XXX XXX  X .",
+"               .",
+" X  XXX XXX  X .",
+" XX XXX XXX XX .",
+" XXXXXX XXXXXX .",
+" XXXX     XXXX .",
+" XXXXX   XXXXX .",
+" XXXXXX XXXXXX .",
+"               .",
+"................"
+};
